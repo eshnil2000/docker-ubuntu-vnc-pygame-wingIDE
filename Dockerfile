@@ -7,7 +7,7 @@
 FROM dorowu/ubuntu-desktop-lxde-vnc
 
 RUN apt-get -y update  \
-    && apt-get install -y python3-pip wget libxcb-xkb-dev\
+    && apt-get install -y git python3-pip wget libxcb-xkb-dev\
     && apt --fix-broken -y install \
     && pip3 install pygame
 
