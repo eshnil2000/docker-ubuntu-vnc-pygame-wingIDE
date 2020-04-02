@@ -1,6 +1,6 @@
 # Docker Ubuntu VNC desktop + pygame + Wing IDE for Python
 # docker build -t docker-ubuntu-vnc-desktop .
-# docker run -p 6080:80 -v /dev/shm:/dev/shm docker-ubuntu-vnc-desktop
+# docker run -p 6080:80 -v /dev/shm:/dev/shm deshnil2000/docker-ubuntu-vnc-pygame-wingide
 # Use in conjunction with nginx-proxy container and docker-browser container
 # then docker run --volume "/var/run/docker.sock:/var/run/docker.sock" -d -e VIRTUAL_HOST=game.proxy.chainapp.live --net nginx-proxy -t eshnil2000/docker-browser
 
