@@ -7,9 +7,11 @@
 FROM dorowu/ubuntu-desktop-lxde-vnc
 
 RUN apt-get -y update  \
-    && apt-get install -y git python3-pip wget libxcb-xkb-dev\
+    && apt-get install -y python3-pip wget libxcb-xkb-dev\
     && apt --fix-broken -y install \
     && pip3 install pygame
 
 RUN wget https://wingware.com/pub/wing-101/7.2.2.0/wing-101-7_7.2.2-0_amd64.deb \
 && dpkg -i wing-101-7_7.2.2-0_amd64.deb
+
+RUN pt-get install -y git
